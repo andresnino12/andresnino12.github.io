@@ -603,7 +603,444 @@ section > h2::after {
 
     line-height: 1.9;
 }
+/* =========================================================
+   SOBRE MÍ - NUEVO DISEÑO
+========================================================= */
 
+#sobre-mi {
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(0, 255, 136, 0.06),
+            transparent 35%
+        ),
+        #080808;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+
+.about-container {
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr
+        1fr;
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   TEXTO
+========================================================= */
+
+.about-text {
+    max-width: 750px;
+}
+
+
+.about-label {
+    color: var(--green);
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+}
+
+
+.about-text h2 {
+    font-size: clamp(50px, 7vw, 85px);
+
+    line-height: 0.85;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 45px;
+
+    font-weight: 900;
+}
+
+
+.about-text h2::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    background: var(--green);
+
+    margin-top: 25px;
+}
+
+
+.about-text p:not(.about-label) {
+    color: #999;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 22px;
+}
+
+
+.about-text strong {
+    color: #eee;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   HABILIDADES
+========================================================= */
+
+.about-skills {
+    width: 100%;
+}
+
+
+.about-skills > .about-label {
+    margin-bottom: 25px;
+}
+
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+
+.skill {
+    position: relative;
+
+    padding: 22px;
+
+    min-height: 125px;
+
+    background: #0d0d0d;
+
+    border: 1px solid var(--border);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s,
+        border-color 0.3s,
+        background 0.3s;
+}
+
+
+.skill::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 3px;
+    height: 0;
+
+    background: var(--green);
+
+    transition: 0.3s;
+}
+
+
+.skill:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(0, 255, 136, 0.45);
+
+    background: #101010;
+}
+
+
+.skill:hover::before {
+    height: 100%;
+}
+
+
+.skill span {
+    display: block;
+
+    color: var(--green);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.skill h3 {
+    font-size: 20px;
+
+    margin-bottom: 4px;
+}
+
+
+.skill p {
+    color: #666;
+
+    font-size: 12px;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   SOBRE MÍ - NUEVO DISEÑO
+========================================================= */
+
+#sobre-mi {
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(0, 255, 136, 0.06),
+            transparent 35%
+        ),
+        #080808;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+
+.about-container {
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr
+        1fr;
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   TEXTO
+========================================================= */
+
+.about-text {
+    max-width: 750px;
+}
+
+
+.about-label {
+    color: var(--green);
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+}
+
+
+.about-text h2 {
+    font-size: clamp(50px, 7vw, 85px);
+
+    line-height: 0.85;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 45px;
+
+    font-weight: 900;
+}
+
+
+.about-text h2::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    background: var(--green);
+
+    margin-top: 25px;
+}
+
+
+.about-text p:not(.about-label) {
+    color: #999;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    margin-bottom: 22px;
+}
+
+
+.about-text strong {
+    color: #eee;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   HABILIDADES
+========================================================= */
+
+.about-skills {
+    width: 100%;
+}
+
+
+.about-skills > .about-label {
+    margin-bottom: 25px;
+}
+
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+
+.skill {
+    position: relative;
+
+    padding: 22px;
+
+    min-height: 125px;
+
+    background: #0d0d0d;
+
+    border: 1px solid var(--border);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s,
+        border-color 0.3s,
+        background 0.3s;
+}
+
+
+.skill::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 3px;
+    height: 0;
+
+    background: var(--green);
+
+    transition: 0.3s;
+}
+
+
+.skill:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(0, 255, 136, 0.45);
+
+    background: #101010;
+}
+
+
+.skill:hover::before {
+    height: 100%;
+}
+
+
+.skill span {
+    display: block;
+
+    color: var(--green);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+
+.skill h3 {
+    font-size: 20px;
+
+    margin-bottom: 4px;
+}
+
+
+.skill p {
+    color: #666;
+
+    font-size: 12px;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   RESPONSIVE - SOBRE MÍ
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
 
 /* =========================================================
    CONTACTO
