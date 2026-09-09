@@ -1075,6 +1075,286 @@ section > h2::after {
     font-size: 18px;
 }
 
+```css
+/* =========================================================
+   CONTACTO
+========================================================= */
+
+#contacto {
+    text-align: left;
+
+    background:
+        radial-gradient(
+            circle at 20% 50%,
+            rgba(0, 255, 136, 0.07),
+            transparent 35%
+        ),
+        #050505;
+
+    border-top: 1px solid var(--border);
+}
+
+
+.contact-container {
+    max-width: 1400px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1.2fr;
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.contact-header {
+    max-width: 600px;
+}
+
+
+.contact-header h2 {
+    font-size: clamp(50px, 7vw, 85px);
+
+    line-height: 0.85;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 40px;
+
+    font-weight: 900;
+}
+
+
+.contact-header h2::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    background: var(--green);
+
+    margin-top: 25px;
+}
+
+
+.contact-header > p:last-child {
+    color: #999;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    max-width: 520px;
+}
+
+
+/* =========================================================
+   TARJETAS DE CONTACTO
+========================================================= */
+
+.contact-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.contact-card {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        50px
+        1fr
+        30px;
+
+    align-items: center;
+
+    gap: 20px;
+
+    min-height: 95px;
+
+    padding: 20px 25px;
+
+    background: #0b0b0b;
+
+    border: 1px solid var(--border);
+
+    color: white;
+
+    text-decoration: none;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s,
+        border-color 0.3s,
+        background 0.3s;
+}
+
+
+.contact-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 3px;
+    height: 0;
+
+    background: var(--green);
+
+    transition: 0.3s;
+}
+
+
+.contact-card:hover {
+    transform: translateX(6px);
+
+    background: #101010;
+
+    border-color: rgba(0, 255, 136, 0.45);
+}
+
+
+.contact-card:hover::before {
+    height: 100%;
+}
+
+
+/* =========================================================
+   NÚMERO
+========================================================= */
+
+.contact-number {
+    color: var(--green);
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   TEXTO
+========================================================= */
+
+.contact-card small {
+    display: block;
+
+    color: #555;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 5px;
+}
+
+
+.contact-card h3 {
+    color: #eee;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    word-break: break-word;
+}
+
+
+/* =========================================================
+   FLECHA
+========================================================= */
+
+.contact-arrow {
+    color: var(--green);
+
+    font-size: 22px;
+
+    transition: 0.3s;
+}
+
+
+.contact-card:hover .contact-arrow {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   UBICACIÓN
+========================================================= */
+
+.contact-location {
+    cursor: default;
+}
+
+
+.contact-location:hover {
+    transform: none;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-card {
+        grid-template-columns:
+            35px
+            1fr
+            20px;
+
+        gap: 12px;
+
+        padding: 18px;
+    }
+
+
+    .contact-card h3 {
+        font-size: 14px;
+    }
+
+
+    .contact-header h2 {
+        font-size: 52px;
+    }
+
+}
+```
 
 /* =========================================================
    FOOTER
